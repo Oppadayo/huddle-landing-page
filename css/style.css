@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    font-size: 11px;
+}
+*{
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    background:url('../images/bg-desktop.svg')  no-repeat, var(--violet);    
+    background-size: contain;    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+header .logo{
+    width: 100%;
+}
+header .logo img{
+    height: 4rem;
+}
+.content{
+    display: flex;
+    margin-top: 7.8rem;
+    align-items: center;
+}
+.content .content-text{  
+    font-family: 'Poppins', sans-serif;    
+    padding: 3.6rem; 
+   
+}
+.content .content-text h2{
+    font-size: 3.4rem;
+    font-weight: 600;
+    max-width: 70%;
+}
+.content .content-text p{
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    max-width: 85%;
+}
+.content .content-text .button{
+    width: 15rem;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 6rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 2rem;
+}
+
+.content .content-text .button a{
+    color: var(--violet);
+    font-size: 1.6rem;
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: right;
+    font-size: 1.6rem;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    padding: 2rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+@media(max-width: 600px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    header .logo{
+        height: 100%;
+        width: 100%;
+        font-size: 6rem;
+    }
+    header .logo img{
+        font-size: 6rem;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+   
+    .content .content-img img{
+        max-width: 100%;
+    }
+    .content .content-text{
+        padding: 0;
+        text-align: center;
+    }
+    .content .content-text h2{
+        max-width: 100%;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .content .content-text p{
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+    .content .content-text .button{
+        width: 80%;        
+        margin: 1.2rem auto;
+    }
+    .social{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    .social a{
+        width: 1.4rem;
+        height: 1.4rem;
+        padding: 1.4rem;
+        border-radius: 50%;
+        margin-left: 1rem;
+    }
+}
